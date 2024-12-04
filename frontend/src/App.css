@@ -1,0 +1,119 @@
+/* Encabezado */
+header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Línea separadora */
+.separator {
+  border-top: 2px solid #000;
+  margin: 10px 0;
+}
+
+/* Contenedor principal */
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Menú lateral */
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar button {
+  background-color: #ddd;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar button.active {
+  background-color: #007BFF;
+  color: white;
+}
+
+.sidebar button:hover {
+  background-color: #ccc;
+}
+
+/* Cuerpo principal */
+.body-content {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Botones de acción */
+.buttons-row {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.buttons-row button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.buttons-row button.active {
+  background-color: #FFA500;
+  color: white;
+}
+
+.buttons-row button:hover {
+  background-color: #45a049;
+}
+
+/* Cuadro de texto y botón Send */
+input,
+textarea {
+  width: 80%;
+  padding: 10px;
+  margin-bottom: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+}
+
+textarea {
+  resize: none;
+}
+
+.send-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+/* Cuadro grande de resultados */
+.output-box {
+  width: 80%;
+  height: auto;
+  border: 1px solid #ccc;
+  margin-top: 10px;
+  padding: 10px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  background-color: #f9f9f9;
+}
