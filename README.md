@@ -53,7 +53,7 @@ El proyecto está organizado de la siguiente manera:
 
 ## Configuración y Ejecución del Proyecto
 
-1. **Clonar el repositorio**
+### 1. **Clonar el repositorio**
    Clona este repositorio a tu máquina local:
 
 ```bash
@@ -61,10 +61,12 @@ git clone https://github.com/Marinolb/Practica-Api-Rest
 cd PracticaU2
 ```
 
-2. **Construir y Levantar los Contenedores con Docker**
+### 2. **Construir y Levantar los Contenedores con Docker**
 Una vez que tengas el repositorio clonado y te encuentres en la raíz del proyecto, puedes levantar los contenedores usando Docker Compose.
 
+```bash
 docker-compose up --build
+```
 
 Este comando realizará lo siguiente:
 - Construirá las imágenes de Docker para el frontend y el backend.
@@ -73,13 +75,13 @@ Este comando realizará lo siguiente:
   - El frontend estará disponible en [http://localhost:3000](http://localhost:3000)
   - El backend estará disponible en [http://localhost:8080](http://localhost:8080)
 
-3. **Variables de Entorno**
+### 3. **Variables de Entorno**
 - **Frontend**:
   - `REACT_APP_API_URL`: La URL donde el frontend realizará las peticiones al backend (por defecto [http://backend:8080/api](http://backend:8080/api)).
 - **Backend**:
   - `SPRING_PROFILES_ACTIVE`: Configura el perfil de Spring Boot (por defecto `dev`).
 
-4. **Acceder a la Aplicación**
+### 4. **Acceder a la Aplicación**
 Una vez que los contenedores estén corriendo, puedes acceder a:
 - El cliente React en [http://localhost:3000](http://localhost:3000)
 - La API REST de Spring Boot en [http://localhost:8080/api](http://localhost:8080/api)
