@@ -49,7 +49,7 @@ El proyecto está organizado de la siguiente manera:
     /package.json      # Archivo de dependencias y configuración de React
   /docker-compose.yml  # Archivo de configuración de Docker Compose
   /README.md           # Este archivo
-
+```
 
 ## Configuración y Ejecución del Proyecto
 
@@ -59,7 +59,7 @@ El proyecto está organizado de la siguiente manera:
 ```bash
 git clone https://github.com/Marinolb/Practica-Api-Rest
 cd PracticaU2
-
+```
 
 2. **Construir y Levantar los Contenedores con Docker**
 Una vez que tengas el repositorio clonado y te encuentres en la raíz del proyecto, puedes levantar los contenedores usando Docker Compose.
