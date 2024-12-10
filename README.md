@@ -48,7 +48,7 @@ El proyecto está organizado de la siguiente manera:
     /Dockerfile        # Dockerfile para construir el frontend
   /docker-compose.yml  # Archivo de configuración de Docker Compose
   /README.md           # Este archivo
-
+```
 
 ## Configuración y Ejecución del Proyecto
 
@@ -58,7 +58,7 @@ El proyecto está organizado de la siguiente manera:
 ```bash
 git clone https://github.com/Marinolb/Practica-Api-Rest
 cd Practica-U2
-
+```
 
 2. **Construir y Levantar los Contenedores con Docker**
 Una vez que tengas el repositorio clonado y te encuentres en la raíz del proyecto, puedes levantar los contenedores usando Docker Compose.
