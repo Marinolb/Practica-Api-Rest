@@ -78,11 +78,6 @@ Este comando realizará lo siguiente:
 - **Backend**:
   - `APP_ENV`: Configura el entorno de Laravel (por defecto local).
 
-4. **Acceder a la Aplicación**
-Una vez que los contenedores estén corriendo, puedes acceder a:
-- El cliente React en [http://localhost:3000](http://localhost:3000)
-- La API REST de Spring Boot en [http://localhost:8080/api](http://localhost:8080/api)
-
 ## Arquitectura
 
 El proyecto está basado en una arquitectura cliente-servidor, donde el frontend (React) actúa como cliente que consume las rutas de la API REST proporcionadas por el backend (Laravel). La comunicación entre los dos servicios se realiza mediante HTTP, y Docker se utiliza para contener ambos servicios y facilitar su ejecución, asegurando que los servicios puedan ejecutarse en cualquier entorno de desarrollo sin problemas de compatibilidad.

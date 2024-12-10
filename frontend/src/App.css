@@ -96,35 +96,34 @@ header {
 /* Cuadro grande de resultados */
 .output-box {
   width: 100%;
-  max-width: 600px; /* Ajusta este valor según tus necesidades */
+  max-width: 600px;
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
-  resize: vertical; /* Permite redimensionar verticalmente si es necesario */
-  font-family: monospace; /* Mejora la legibilidad del contenido */
-  margin: 20px auto; /* Centra el cuadro horizontalmente y añade margen vertical */
+  resize: vertical; 
+  font-family: monospace; 
+  margin: 20px auto; 
 }
 
 /* Clase para campos de entrada (input y textarea) */
 .input-field {
   width: 100%;
-  max-width: 600px; /* Debe coincidir con el max-width del output-box */
+  max-width: 600px; 
   padding: 10px;
   box-sizing: border-box;
   border: 1px solid #ccc;
   border-radius: 4px;
-  margin: 0 auto 20px auto; /* Centra el campo y añade margen inferior */
-  display: block; /* Asegura que el margen auto funcione */
+  margin: 0 auto 20px auto; 
+  display: block;
 }
 
 /* Contenedor para los campos de entrada */
 .input-container {
   width: 100%;
-  max-width: 600px; /* Debe coincidir con el max-width del output-box */
-  margin: 0 auto 20px auto; /* Centra el contenedor y añade margen inferior */
-  display: block; /* Asegura que el margen auto funcione */
-  /* Eliminar bordes y padding para evitar conflictos */
+  max-width: 600px;
+  margin: 0 auto 20px auto;
+  display: block;
   border: none;
   padding: 0;
 }

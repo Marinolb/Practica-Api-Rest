@@ -56,12 +56,12 @@ class CsvController extends Controller
         }
     
         $content = Storage::get("files/$id");
-        $rows = explode("\n", trim($content)); // Dividir por líneas
-        $data = array_map(fn($row) => str_getcsv($row), $rows); // Procesar cada línea como CSV sin encabezados
+        $rows = explode("\n", trim($content));
+        $data = array_map(fn($row) => str_getcsv($row), $rows);
     
         return response()->json([
             'mensaje' => 'Fichero leído con éxito',
-            'contenido' => $data, // Devolver filas como array de arrays
+            'contenido' => $data,
         ], 200);
     }
     
@@ -82,7 +82,6 @@ class CsvController extends Controller
             return response()->json(['mensaje' => 'Contenido no es un CSV válido'], 415);
         }
 
-        // Sobrescribir el contenido existente
         Storage::put("files/$id", trim($content));
 
         return response()->json(['mensaje' => 'Fichero actualizado exitosamente'], 200);
