@@ -63,7 +63,9 @@ cd Practica-U2
 2. **Construir y Levantar los Contenedores con Docker**
 Una vez que tengas el repositorio clonado y te encuentres en la raíz del proyecto, puedes levantar los contenedores usando Docker Compose.
 
+```bash
 docker-compose up -d --build
+```
 
 Este comando realizará lo siguiente:
 - Construirá las imágenes de Docker para el frontend y el backend.
