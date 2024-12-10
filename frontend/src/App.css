@@ -1,0 +1,136 @@
+/* Encabezado */
+header {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+
+/* Línea separadora */
+.separator {
+  border-top: 2px solid #000;
+  margin: 10px 0;
+}
+
+/* Contenedor principal */
+.main-container {
+  display: flex;
+  height: 100vh;
+}
+
+/* Menú lateral */
+.sidebar {
+  width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar button {
+  background-color: #ddd;
+  border: none;
+  padding: 10px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+.sidebar button.active {
+  background-color: #007BFF;
+  color: white;
+}
+
+.sidebar button:hover {
+  background-color: #ccc;
+}
+
+/* Cuerpo principal */
+.body-content {
+  flex-grow: 1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Botones de acción */
+.buttons-row {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.buttons-row button {
+  padding: 10px 20px;
+  font-size: 14px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.buttons-row button.active {
+  background-color: #FFA500;
+  color: white;
+}
+
+.buttons-row button:hover {
+  background-color: #45a049;
+}
+
+/* Botón Send */
+.send-button {
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+/* Cuadro grande de resultados */
+.output-box {
+  width: 100%;
+  max-width: 600px; /* Ajusta este valor según tus necesidades */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical; /* Permite redimensionar verticalmente si es necesario */
+  font-family: monospace; /* Mejora la legibilidad del contenido */
+  margin: 20px auto; /* Centra el cuadro horizontalmente y añade margen vertical */
+}
+
+/* Clase para campos de entrada (input y textarea) */
+.input-field {
+  width: 100%;
+  max-width: 600px; /* Debe coincidir con el max-width del output-box */
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin: 0 auto 20px auto; /* Centra el campo y añade margen inferior */
+  display: block; /* Asegura que el margen auto funcione */
+}
+
+/* Contenedor para los campos de entrada */
+.input-container {
+  width: 100%;
+  max-width: 600px; /* Debe coincidir con el max-width del output-box */
+  margin: 0 auto 20px auto; /* Centra el contenedor y añade margen inferior */
+  display: block; /* Asegura que el margen auto funcione */
+  /* Eliminar bordes y padding para evitar conflictos */
+  border: none;
+  padding: 0;
+}
+
+/* Opcional: Estilo uniforme para todos los campos de entrada */
+.input-field, .output-box {
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+}

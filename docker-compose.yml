@@ -1,0 +1,47 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
+    environment:
+      - REACT_APP_API_URL=http://backend:8080/api
+    networks:
+      - app-network
+
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      - APP_ENV=local
+      - APP_DEBUG=true
+      # Eliminamos APP_KEY ya que se genera automáticamente en el Dockerfile
+    volumes:
+      - ./backend/storage/files:/app/storage/app/private/files  # Mapeo corregido
+    networks:
+      - app-network
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/api/hello"]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+
+  wait-for-it:
+    image: busybox
+    command: /bin/sh -c "until nc -z backend 8080; do sleep 1; done;"
+    depends_on:
+      - backend
+    networks:
+      - app-network
+
+networks:
+  app-network:
+    driver: bridge
